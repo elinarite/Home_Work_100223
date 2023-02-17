@@ -4,14 +4,21 @@ public class Department {
     // Отдел (с полями Название, Количество сотрудников, Фирма)
 
     private String departmentName;
-    private int numbersOfEmployees;
-    private String CompanyNameWithDepartment;
 
-    public Department(String departmentName, int numbersOfEmployees, String companyNameWithDepartment) {
+    ;
+    private int numbersOfEmployees;
+    private Company company;
+
+    public Department(String departmentName, int numbersOfEmployees, Company company) {
         this.departmentName = departmentName;
         this.numbersOfEmployees = numbersOfEmployees;
-        CompanyNameWithDepartment = companyNameWithDepartment;
+        this.company = company;
     }
+    public Department(String departmentName, Company company) {
+        this.departmentName = departmentName;
+        this.company = company;
+    }
+
 
     public Department() {
 
@@ -33,11 +40,11 @@ public class Department {
         this.numbersOfEmployees = numbersOfEmployees;
     }
 
-    public String getCompanyNameWithDepartment() {
-        return CompanyNameWithDepartment;
+    public Company getCompany() {
+        return company;
     }
 
-    public void setCompanyNameWithDepartment(String companyNameWithDepartment) {
-        CompanyNameWithDepartment = companyNameWithDepartment;
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

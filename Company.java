@@ -16,8 +16,11 @@ public class Company {
 // На занятии обязательно разберем эту задачу и решим.
 
 
-
     private String companyName;
+
+    public Company() {
+        this.companyName = "noname"; //jesli hochesh sozdatj kompaniju bez imeni
+    }
 
     public Company(String companyName) {
         this.companyName = companyName;
@@ -25,10 +28,11 @@ public class Company {
 
 
     public String getCompanyName() {
-            return companyName;
-        }
-        public void setCompanyName(String companyName) {
-            this.companyName = companyName;
-        }
+        return companyName;
     }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+}
 
